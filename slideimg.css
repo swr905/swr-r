@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.slideimg{
+    width: 1100px;
+    height: 289px;
+    position: relative;
+    left: 271px;
+    top: -435px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.slideimg ul{
+    width: 1100px;
+    height: 240px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.slideimg li{
+    list-style: none;
+    height: 100%;
+    padding-right: 20px;
+}
+.slideimg li img{
+    width: 250px;
+    height: 180px;
+    /* 保持原有尺寸比例，裁切长边 */
+    object-fit: cover;
+    /* 图片定位正中间 */
+    object-position: center;
+}

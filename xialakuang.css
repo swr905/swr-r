@@ -1,0 +1,60 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    
+}
+.nav{
+    height: 40px;
+    width: 1644px;
+    background-image: url(./img/navbd.jpg);
+    background-position-y:51px;
+    background-position-x:270px;
+    /* position: relative;
+    left: 270px;
+    top: 0; */
+    z-index: 9999;
+
+}
+.navlist{
+    position: relative;
+    left: 270px;
+    
+}
+.navlist li{
+    float: left;
+    list-style:none;
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    text-align:center;
+}
+.navlist a{
+    color: #fffefe;
+    font-size: 16px;
+    text-align: center;
+    width: 100px;
+    height: 42px;
+    display: block;
+}
+/* 鼠标悬停时背景变色 */
+.navlist li:hover{
+    transition:0.7s;
+    background-color:#1384E2;
+}
+/* 改变下拉列表颜色 */
+.droplist{
+    background-color:rgb(248, 151, 201);
+    display: none;
+}
+.droplist a{
+    color: black;
+    font-size: 14px;
+}
+.droplist a:hover{
+    color: #fffefe;
+}
+/* 让鼠标移动到导航栏时，下拉框显示 */
+li:hover .droplist{
+    display: block;
+}

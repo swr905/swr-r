@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#slideshow{
+    width: 1100px;
+    height: 433px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -435px;
+    left: -24px;
+    
+}
+#slideshow img{
+    width: 1100px;
+    height: 433px;
+    position: absolute;
+    top:0;
+    left: 0;
+    /* 不透明度 */
+    opacity: 0;
+    /* 慢慢消失 */
+    transition: opacity 1s ease-in-out;
+}
+#slideshow img.active{
+    opacity: 1;
+}
+/* 设置页码样式 */
+#slideshow div{
+    width: 100%;
+    position:absolute;
+    bottom: 10px;
+    text-align: center;
+}
+#slideshow span{
+    display: inline-block;
+    width: 10px;
+    line-height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 15px;
+    font-size: 8px;
+}
+#slideshow span.active{
+    background-color: #ffdd55;
+    color: #fff;
+}
