@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学院官网 - 登录/注册</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-register-tabs">
+            <button class="tab-link active" data-tab="login">登录</button>
+            <button class="tab-link" data-tab="register">注册</button>
+        </div>
+        <div class="tab-content" id="login-content">
+            <h2>登录</h2>
+            <form id="login-form">
+                <label for="login-username">用户名:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">密码:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">登录</button>
+            </form>
+            <p id="login-error" style="color: red; display: none;">账号或密码错误</p>
+        </div>
+        <div class="tab-content" id="register-content" style="display:none;">
+            <h2>注册</h2>
+            <form id="register-form">
+                <label for="register-username">用户名:</label>
+                <input type="text" id="register-username" required>
+                <label for="register-password">密码:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">注册</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
